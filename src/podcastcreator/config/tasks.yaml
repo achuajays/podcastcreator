@@ -1,0 +1,24 @@
+create_report_task:
+  description: >
+    Create a concise, informative report about {topic}, ensuring the total length does not exceed 2500 characters.
+    The report should cover the most important and interesting aspects of {topic} as relevant to the current year ({current_year}).
+  expected_output: >
+    A single markdown-formatted report (without code block markers) about {topic}, maximum 2500 characters.
+  agent: podcast_creator
+
+create_podcast_script_segments_task:
+  description: >
+    Take the report about {topic} and split it into an array of podcast script segments.
+    Each segment should be a string of up to 1000 characters, suitable for narration.
+    Ensure the segments flow logically and cover the entire report content.
+  expected_output: >
+    An array of strings, each string being a podcast script segment of up to 500 characters, covering the full report.
+  agent: podcast_creator
+
+merge_segments_to_audio_task:
+  description: >
+    Use the array of podcast script segments to generate audio for each segment, then merge all audio segments into a single podcast episode.
+    Ensure the final audio is seamless and professionally merged. and delete all files. 
+  expected_output: >
+    A single audio file containing the full podcast episode, created by merging the audio of all script segments.
+  agent: podcast_producer
