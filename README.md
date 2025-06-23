@@ -65,31 +65,7 @@ An intelligent AI-powered podcast generation system that transforms any topic in
 4. **Audio Generation**: Each segment is converted to speech
 5. **Final Production**: All segments are merged into a complete podcast
 
-### Available Commands
 
-#### 🚀 Run Podcast Generation
-```bash
-python -m podcastcreator.main run
-```
-Creates a complete podcast on the default or specified topic.
-
-#### 🎓 Train the AI Crew
-```bash
-python -m podcastcreator.main train <iterations> <filename>
-```
-Improves the AI agents' performance through iterative training.
-
-#### 🔄 Replay Previous Execution
-```bash
-python -m podcastcreator.main replay <task_id>
-```
-Re-runs a specific task from a previous execution.
-
-#### 🧪 Test Performance
-```bash
-python -m podcastcreator.main test <iterations> <eval_llm>
-```
-Evaluates the system's performance across multiple iterations.
 
 ## 📁 Project Structure
 
