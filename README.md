@@ -56,7 +56,7 @@ An intelligent AI-powered podcast generation system that transforms any topic in
   - Ensures seamless final output
 - **Tools**: All audio processing tools (TTS, Merger, Cleaner)
 
-## 🎯 उपयोग (Usage)
+## 🎯 Usage
 
 ### Basic Workflow
 1. **Topic Input**: Provide any topic of interest (default: "AI LLMs")
